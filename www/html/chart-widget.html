@@ -1,0 +1,74 @@
+<div class="chart-body tabset" ng-init="selectedTab = 'tab1'">
+    <div class="summary" 
+         ng-class="{'active':selectedTab === 'tab1'}" 
+         ng-click="selectedTab = 'tab1'">
+        <h2>
+            <a href="">{{lang.chart.tab1}}</a>
+        </h2>
+    </div>
+    <div class="details">
+        <h3>{{lang.chart.tab1Title}}</h3>
+        <div class="donut-chart"
+             donut-chart 
+             donut-data='donut.donutData'
+             donut-label-color='donut.labelColor' 
+             donut-background-color='donut.backgroundColor'
+             donut-colors='donut.colors'
+             donut-formatter='formatter'>
+        </div>
+    </div>
+    <div class="summary" 
+            ng-class="{'active':selectedTab === 'tab2'}" 
+            ng-click="selectedTab = 'tab2'">
+        <h2>
+            <a href="">{{lang.chart.tab2}}</a>
+        </h2>
+    </div>
+    <div class="details">
+        <h3>{{lang.chart.tab2Title}}</h3>
+        <div class="bar-chart"
+             bar-chart 
+             bar-data='bar.barData'
+             bar-x='y'
+             bar-y='bar.y'
+             bar-labels='bar.labels'
+             bar-colors='bar.colors'>
+        </div>
+    </div>
+</div>
+<div class="chart-foot">
+    <ul class="chart-info">
+        <li class="audio">
+            <span>{{lang.chart.info1}}</span>
+            <div>55%</div>
+        </li>
+        <li class="video">
+            <span>{{lang.chart.info2}}</span>
+            <div>23%</div>
+        </li>
+        <li class="photo">
+            <span>{{lang.chart.info3}}</span>
+            <div>17%</div>
+        </li>
+    </ul>
+    <ul class="chart-actions">
+        <li class="active">
+            <a href="">
+                <i class="fa fa-cloud-upload fa-lg"></i>
+                <div>{{lang.chart.action1}}</div>
+            </a>
+        </li>
+        <li>
+            <a href="">            
+                <i class="fa fa-share-alt fa-lg"></i>
+                <div>{{lang.chart.action2}}</div>
+            </a>
+        </li>
+        <li>
+            <a href="">            
+                <i class="fa fa-undo fa-lg"></i>
+                <div>{{lang.chart.action3}}</div>
+            </a>
+        </li>
+    </ul>
+</div>

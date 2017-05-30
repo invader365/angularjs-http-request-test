@@ -1,0 +1,32 @@
+{
+    "menu": {
+        "opt1": "Inicio",
+        "opt2": "Registro",
+        "opt3": "Eventos",
+        "opt4": "Cuenta",
+        "opt5": "Ajustes",
+        "optList5": {
+            "item1": "Ayuda",
+            "item2": "Salir"
+        }
+    },
+    "chart": {
+        "tab1": "Diagrama",
+        "tab2": "Reporte mensual",
+        "tab1Title": "Transferencia de datos",
+        "tab2Title": "Frecuencia de tranferencia",
+        "info1": "Audio",
+        "info2": "Video",
+        "info3": "Fotos",
+        "action1": "Cargar archivos",
+        "action2": "Compartir enlace",
+        "action3": "Reestablecer"
+    },
+    "profile": {
+        "followers": "Seguidores",
+        "edit": "Editar usuario",
+        "statistics": "Estadisticas web",
+        "settings": "Ajustes de carga",
+        "events": "Eventos"
+    }
+}

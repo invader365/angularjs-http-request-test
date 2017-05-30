@@ -1,0 +1,16 @@
+{
+	"donutData": [
+		{ "label": "2,435 files", "value": 47 },
+		{ "label": "1,025 files", "value": 20 },
+		{ "label": "415 files",  "value": 7 },
+		{ "label": "212 files", "value": 5 }
+	],
+	"labelColor": "#8e8071",
+	"backgroundColor": "#ffffff",
+	"colors": [
+		"#4daf7b",
+		"#e55e3a",
+		"#ebc85e", 
+		"#dddddd"
+	]
+}

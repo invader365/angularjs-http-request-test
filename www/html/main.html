@@ -1,0 +1,19 @@
+<nav>
+    <section class="container">
+        <div class="b-menu-widget" ng-include="'./html/nav-widget.html'"></div>
+    </section>
+</nav>
+<main>
+    <section class="container">
+        <div class="grid">
+            <div class="col">
+                <div class="b-chart-widget" ng-include="'./html/chart-widget.html'" ng-controller="chartWidgetCtrl"></div>
+            </div>                
+            <div class="col">
+                <div class="b-profile-widget metro" ng-include="'./html/profile-widget.html'" ng-controller="profileWidgetCtrl"></div>                
+                <div class="b-card-widget metro" ng-include="'./html/card-widget.html'" ng-controller="cardWidgetCtrl"></div>
+            </div>
+        </div>
+        <div class="b-lang-widget metro" ng-include="'./html/lang-widget.html'"></div>
+    </section>
+</main>

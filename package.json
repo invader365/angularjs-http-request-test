@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "front end test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "author": "Abel",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "browser-sync": "^2.18.11",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "jquery": "^3.2.1",
+    "merge-stream": "^1.0.1",
+    "morris.js": "^0.5.0",
+    "raphael": "^2.2.7"
+  }
+}

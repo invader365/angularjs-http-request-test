@@ -1,0 +1,32 @@
+{
+    "menu": {
+        "opt1": "Home",
+        "opt2": "Check in",
+        "opt3": "Events",
+        "opt4": "Account",
+        "opt5": "Settings",
+        "optList5": {
+            "item1": "Help",
+            "item2": "Exit"
+        }
+    },
+    "chart": {
+        "tab1": "Diagram stats",
+        "tab2": "Month report",
+        "tab1Title": "Data transfer",
+        "tab2Title": "Transfer frequency",
+        "info1": "Audio",
+        "info2": "Video",
+        "info3": "Photo",
+        "action1": "Upload files",
+        "action2": "Share link",
+        "action3": "Back up"
+    },
+    "profile": {
+        "followers": "Followers",
+        "edit": "Edit user",
+        "statistics": "Web statistics",
+        "settings": "Upload settings",
+        "events": "Events"
+    }
+}
