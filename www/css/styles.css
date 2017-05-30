@@ -133,7 +133,7 @@ h3 {
 }
 .b-menu-widget .first-level > li {
   display: inline-block;
-  width: 20%;
+  width: 25%;
 }
 .b-menu-widget .first-level > li:first-child > a {
   border-top-left-radius: 7px;
@@ -143,19 +143,22 @@ h3 {
   border-top-right-radius: 7px;
 }
 .b-menu-widget li a i {
-  margin-right: 7px;
+  margin-right: 6px;
 }
 .b-menu-widget li a {
   display: inline-block;
   width: 100%;
-  padding: 15px 10px 12px;
+  padding: 15px 9px 12px;
   color: #8e8071;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: .75em;
   font-weight: 700;
   border-right: 1px solid #f6f0ec;
   border-bottom: 3px solid transparent;
   text-align: center;
+}
+.b-menu-widget li a span {
+  display: block;
 }
 .b-menu-widget li a:hover {
   background-color: #f8f3f0;
@@ -177,30 +180,23 @@ h3 {
 .b-menu-widget li:hover a.settings {
   border-bottom-color: #e55e3a;
 }
-.b-menu-widget li a span {
-  display: none;
+.b-menu-widget li:hover ul {
+  display: block;
 }
 .b-menu-widget li ul {
   position: absolute;
   display: none;
-  z-index: 1;
-}
-.b-menu-widget li:hover ul {
-  display: block;
-}
-.b-menu-widget li ul li {
-  border-radius: 0;
-}
-.b-menu-widget li ul li:first-child a {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.b-menu-widget li ul li:last-child a {
+  -webkit-box-shadow: 0 0 12px #ab8b6e;
+          box-shadow: 0 0 12px #ab8b6e;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  overflow: hidden;
 }
-.b-menu-widget li ul li a {
+.b-menu-widget li ul li {
+  background-color: white;
   border-radius: 0;
+}
+.b-menu-widget li ul a {
   background-color: white;
 }
 .b-chart-widget {
@@ -259,7 +255,6 @@ h3 {
 .b-chart-widget .chart-foot ul li {
   color: #b1a599;
   width: 33%;
-  padding: 7px 0;
   text-align: center;
 }
 .b-chart-widget .chart-foot ul li:first-child {
@@ -300,9 +295,13 @@ h3 {
 }
 .b-chart-widget .chart-foot .chart-actions li a {
   display: inline-block;
-  padding: 8px 0;
+  padding: 15px 0;
   width: 100%;
+  cursor: pointer;
+  position: relative;
 }
+.b-chart-widget .chart-foot .chart-actions li a:focus,
+.b-chart-widget .chart-foot .chart-actions li a:active,
 .b-chart-widget .chart-foot .chart-actions li a:hover {
   color: white;
 }
@@ -519,8 +518,11 @@ h3 {
   border-bottom-right-radius: 7px;
 }
 @media all and (min-width: 800px) {
+  .b-menu-widget li a {
+    font-size: .9em;
+  }
   .b-menu-widget li a span {
-    display: block;
+    display: inline;
   }
   .grid .col {
     width: 49%;
@@ -532,7 +534,7 @@ h3 {
   }
 }
 @media all and (min-width: 1024px) {
-  .b-menu-widget li a span {
-    display: inline-block;
+  .b-menu-widget li a {
+    font-size: 1em;
   }
 }

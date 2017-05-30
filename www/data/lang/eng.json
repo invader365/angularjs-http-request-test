@@ -1,11 +1,10 @@
 {
     "menu": {
-        "opt1": "Home",
-        "opt2": "Check in",
-        "opt3": "Events",
-        "opt4": "Account",
-        "opt5": "Settings",
-        "optList5": {
+        "opt1": "Check in",
+        "opt2": "Events",
+        "opt3": "Account",
+        "opt4": "Settings",
+        "optList4": {
             "item1": "Help",
             "item2": "Exit"
         }

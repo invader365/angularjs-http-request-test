@@ -6,5 +6,6 @@
     "./node_modules/morris.js/morris.min.js",
     "./src/scripts/libs/*.js",
     "./src/scripts/*.js",
-    "./src/scripts/controllers/*.js"
+    "./src/scripts/controllers/*.js",
+    "./src/scripts/directives/*.js"
 ]

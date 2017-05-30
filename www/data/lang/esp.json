@@ -1,11 +1,10 @@
 {
     "menu": {
-        "opt1": "Inicio",
-        "opt2": "Registro",
-        "opt3": "Eventos",
-        "opt4": "Cuenta",
-        "opt5": "Ajustes",
-        "optList5": {
+        "opt1": "Registro",
+        "opt2": "Eventos",
+        "opt3": "Cuenta",
+        "opt4": "Ajustes",
+        "optList4": {
             "item1": "Ayuda",
             "item2": "Salir"
         }

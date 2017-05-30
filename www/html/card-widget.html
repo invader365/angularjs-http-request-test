@@ -19,8 +19,8 @@
             </a>
         </li>
         <li>
-            <a href="" class="active">
-                <i class="fa fa-heart fa-lg"></i> 210
+            <a href="" ng-class="heartMe == true ? 'active':''" ng-click="count = count + 1; heartMe=true" ng-init="count=17;heartMe=false">
+                <i class="fa fa-heart fa-lg"></i> {{count}}
             </a>
         </li>
     </ul>

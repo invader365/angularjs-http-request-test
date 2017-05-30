@@ -1,4 +1,5 @@
 'use strict';
+
 /*
 function openContent (target) {
     var wrapper = document.getElementsByClassName(target)[0];
