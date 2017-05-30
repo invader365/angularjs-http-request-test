@@ -4,24 +4,24 @@
     <p>{{profile.followers}} {{lang.profile.followers}}</p>
 </div>
 <div class="profile-body">
-    <ul>
+    <ul ng-init="selectedOpt = 'opt2'">
         <li>
-            <a href="">
+            <a href="" ng-class="{'active':selectedOpt === 'opt1'}" ng-click="selectedOpt = 'opt1'">
                 {{lang.profile.edit}} <i class="fa fa-user fa-lg"></i>
             </a>
         </li>
         <li>
-            <a href="" class="active">
+            <a href="" ng-class="{'active':selectedOpt === 'opt2'}" ng-click="selectedOpt = 'opt2'">
                 {{lang.profile.statistics}} <i class="fa fa-bar-chart fa-lg"></i>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="" ng-class="{'active':selectedOpt === 'opt3'}" ng-click="selectedOpt = 'opt3'">
                 {{lang.profile.settings}}<i class="fa fa-wrench fa-lg"></i>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="" ng-class="{'active':selectedOpt === 'opt4'}" ng-click="selectedOpt = 'opt4'">
                 {{lang.profile.events}}<i class="fa fa-map-marker fa-lg"></i>
             </a>
         </li>

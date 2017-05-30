@@ -142,9 +142,6 @@ h3 {
 .b-menu-widget .first-level > li:last-child > a {
   border-top-right-radius: 7px;
 }
-.b-menu-widget li a i {
-  margin-right: 6px;
-}
 .b-menu-widget li a {
   display: inline-block;
   width: 100%;
@@ -157,16 +154,16 @@ h3 {
   border-bottom: 3px solid transparent;
   text-align: center;
 }
+.b-menu-widget li a i {
+  margin-right: 6px;
+}
 .b-menu-widget li a span {
   display: block;
 }
-.b-menu-widget li a:hover {
+.b-menu-widget li a a:hover {
   background-color: #f8f3f0;
   border-bottom-width: 3px;
   border-bottom-style: solid;
-}
-.b-menu-widget li:hover a.home {
-  border-bottom-color: #4daf7b;
 }
 .b-menu-widget li:hover a.checkin {
   border-bottom-color: #e55e3a;

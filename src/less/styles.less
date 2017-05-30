@@ -148,9 +148,6 @@
         & .first-level > li:last-child > a {
             border-top-right-radius: @radius;
         }
-        & li a i {
-            margin-right: 6px;
-        }
         & li a {
             display: inline-block;
             width: 100%;
@@ -162,17 +159,17 @@
             border-right: 1px solid #f6f0ec;
             border-bottom: 3px solid transparent;
             text-align: center;
-        }
-        & li a span {
-            display: block;
-        }
-        & li a:hover {
-            background-color: #f8f3f0;
-            border-bottom-width: 3px;
-            border-bottom-style: solid;
-        }
-        & li:hover a.home {
-            border-bottom-color: #4daf7b;
+            & i {
+                margin-right: 6px;
+            }
+            & span {
+                display: block;
+            }
+            & a:hover {
+                background-color: #f8f3f0;
+                border-bottom-width: 3px;
+                border-bottom-style: solid;
+            }
         }
         & li:hover a.checkin {
             border-bottom-color: #e55e3a;
