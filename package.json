@@ -4,7 +4,8 @@
   "description": "front end test",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"No test specified\" && exit"
+    "test": "echo \"No test specified\" && exit",
+    "start": "gulp"
   },
   "keywords": [
     "keyword"
@@ -15,7 +16,7 @@
     "angular": "^1.6.4",
     "angular-ui-router": "^1.0.3",
     "browser-sync": "^2.18.11",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-less": "^3.3.0",

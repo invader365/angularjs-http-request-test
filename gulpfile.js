@@ -12,19 +12,19 @@ gulp.task('less', function () {
         .pipe(less())
         .pipe(prefix({browsers: ['last 4 versions']}))
         .pipe(gulp.dest('./www/css'))
-        .pipe(sync.stream());
+        .pipe(sync.stream())
 });
 
 gulp.task('scripts', function() {
     return gulp.src(scripts)
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest('./www/js'))
-        .pipe(sync.stream());
+        .pipe(sync.stream())
 });
 
 gulp.task('browser-sync', function() {
     sync.init(null, {
-        open: false,
+        open: true,
         server: {
             baseDir: './www'
         }
@@ -32,9 +32,10 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('serve', function() {
-    gulp.start(['less', 'scripts', 'browser-sync']);
-    gulp.watch("./src/less/**/*.less", ['less']);
-    gulp.watch("./src/scripts/**/*.js", ['scripts']);
-    gulp.watch("./www/data/*.json").on('change', sync.reload);
-    gulp.watch("./www/**/*.html").on('change', sync.reload);
+    gulp.watch("./src/less/**/*.less", gulp.series('less')),
+    gulp.watch("./src/scripts/**/*.js", gulp.series('scripts')),
+    gulp.watch("./www/data/*.json").on('change', sync.reload),
+    gulp.watch("./www/**/*.html").on('change', sync.reload)
 });
+
+gulp.task('default', gulp.parallel('serve', 'less', 'scripts', 'browser-sync'));
